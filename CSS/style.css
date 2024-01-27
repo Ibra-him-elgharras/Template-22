@@ -22,12 +22,14 @@ body{
 .container{
     width: 90%;
     height: 80%;
+    z-index: 100;
 }
 
                          /* CONTENT*/
 
 
 .content{
+    z-index: 700;
     width: 100%;
     height: 100%;
     background: #ffffff0f;
@@ -46,7 +48,6 @@ body{
     width: 100%;
     height: 10%;
     margin-bottom: 10%;
-    background: #339964;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,12 +83,18 @@ body{
 
 .content .listes .login button{
     height: 100%;
-    background: #e81449;
+    background: linear-gradient(to right, #dc4557, #eb0d0d);
     color: #fff;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     padding: 0 20px;
     border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.content .listes .login button:hover{
+    scale: 1.06;
 }
 
                          /* CONTENT-TEXTES */
@@ -136,8 +143,6 @@ body{
     bottom: 0;
     display: flex;
     align-items: center;
-    
-    
 }
 
 .container .content .textes .textes-right .line{
@@ -163,7 +168,30 @@ body{
 
 
 
+                         /* Beffore */
 
+.container .content::before{
+    content: '';
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    position: absolute;
+    top: -16%;
+    left: -18%;
+    background: linear-gradient(to right, #dc455789, #eb0d0d36);
+}
 
+                         /* After */
+
+.container .content::after{
+    content: '';
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -32%;
+    right: -24%;
+    background: linear-gradient(to right, #eb0d9236, #dc45b189);
+}
 
 
