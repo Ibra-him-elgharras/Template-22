@@ -168,7 +168,7 @@ body{
 
 
 
-                         /* Beffore */
+                         /* Before */
 
 .container .content::before{
     content: '';
@@ -192,6 +192,104 @@ body{
     bottom: -32%;
     right: -24%;
     background: linear-gradient(to right, #eb0d9236, #dc45b189);
+}
+
+
+                         /* MEDIA QUERIES */
+
+                         /* MEDIA QUERIES: mobile */
+
+@media (max-width:767px) {
+
+    .content .listes{
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        line-height: 20px;
+        margin-bottom: 5%;
+    }
+
+    .content .listes .logo{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    .content .listes .nav{
+        width: 800px;
+    }
+
+    .content .listes .nav a{
+        margin-left: 50px;
+        font-size: 22px;
+        color: #fff;
+    }
+
+    .content .listes .nav a:hover{
+        margin-left: 50px;
+        font-size: 22px;
+        color: #a52a2a;
+    }
+
+    .container .content .textes{
+        height: 300px;
+        position: relative;
+    }
+
+    .container .content .textes .text-left{
+        width: 100%;
+    }
+    
+    .container .content .textes .text-left .text-bold{
+        text-align: center;
+    }
+    
+    .container .content .textes .text-left p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .container .content .textes .textes-right{
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        right: -25%;
+    }
+    
+    .container .content .textes .textes-right .line{
+        height: 5px;
+        width: 50px;
+        background: #000;
+        margin-right: 10px;
+    }
+    
+    .container .content .textes .textes-right .play{
+        font-size: 18px;
+        font-weight: 700;
+        margin-right: 10px;
+    }
+    
+    .container .content .textes .textes-right i{
+        font-size: 22px;
+    }
+
+}
+
+
+                         /* MEDIA QUERIES: SMALL SCREENS */
+
+@media (min-width:768px) and (max-width:991px) {
+    
+}
+                         /* MEDIA QUERIES: MEDIUM SCREENS */
+
+@media (min-width:992px) {
+    
+}
+                         /* MEDIA QUERIES: mobile */
+
+@media (min-width:1200px) {
+    
 }
 
 
