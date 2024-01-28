@@ -201,6 +201,17 @@ body{
 
 @media (max-width:767px) {
 
+    body{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container{
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+    }
+
     .content .listes{
         height: 120px;
         display: flex;
@@ -280,7 +291,84 @@ body{
 
 @media (min-width:768px) and (max-width:991px) {
     
+    .content .listes{
+        width: 100%;
+        height: 10%;
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .content .listes .logo{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    
+    .content .listes .nav{
+        width: 600px;
+        margin-bottom: 10px;
+    }
+    .content .listes .nav a{
+        margin-left: 40px;
+        font-size: 19px;
+        color: #fff;
+    }
+    
+    .content .listes .nav a:hover{
+        color: #0eb01e;
+    }
+    
+    .content .listes .login button{
+        height: 100%;
+        background: linear-gradient(to left, #dc4557, #eb0d0d);
+        font-size: 22px;
+        font-weight: 600;
+        padding: 0 30px;
+    }
+    
+
+.container .content .textes .text-left{
+    width: 100%;
 }
+
+.container .content .textes .text-left .text-bold{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container .content .textes .text-left p{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.container .content .textes .textes-right{
+    width: 300px;
+   position: relative;
+   top: 0;
+   left: 30%;
+    margin-bottom: 10%;
+}
+
+.container .content .textes .textes-right .line{
+    height: 5px;
+    width: 40px;
+    margin-right: 15px;
+}
+
+.container .content .textes .textes-right .play{
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.container .content .textes .textes-right i{
+    font-size: 24px;
+}
+
+}
+
+
                          /* MEDIA QUERIES: MEDIUM SCREENS */
 
 @media (min-width:992px) {
